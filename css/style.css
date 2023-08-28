@@ -57,6 +57,7 @@ body {
     background: #262626;
     font-size: 26px;
     transition: .2s;
+    cursor: pointer;
 }
 
 .calculadora button:hover {
