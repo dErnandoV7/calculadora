@@ -9,7 +9,7 @@ function clean() {
 
 function back() {
     let resultado = document.querySelector('#resultado').innerHTML;
-    document.querySelector('#resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+    document.querySelector("#resultado").innerHTML = resultado.slice(0, resultado.length -1)
 }
 
 function calcular() {
