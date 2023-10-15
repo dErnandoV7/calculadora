@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css">
     <title>Calculadora</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="title">
-            <h1>d<strong>.</strong>Ernando<strong>V</strong></h1>
-        </div>
+      <div class="title">
+        <h1>d<strong>.</strong>Ernando<strong>V</strong></h1>
+      </div>
 
-        <div class="calculadora">
-            <h2>Calculadora</h2>
-            <p id="resultado"></p>
-            <table>
-                <tr>
-                    <td><button class="red" onclick="clean()">C</button></td>
-                    <td><button onclick="back()">&lt</button></td>
-                    <td><button onclick="insert('/')">/</button></td>
-                    <td><button onclick="insert('*')">X</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="insert('1')">1</button></td>
-                    <td><button onclick="insert('2')">2</button></td>
-                    <td><button onclick="insert('3')">3</button></td>
-                    <td><button onclick="insert('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="insert('4')">4</button></td>
-                    <td><button onclick="insert('5')">5</button></td>
-                    <td><button onclick="insert('6')">6</button></td>
-                    <td><button onclick="insert('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="insert('7')">7</button></td>
-                    <td><button onclick="insert('8')">8</button></td>
-                    <td><button onclick="insert('9')">9</button></td>
-                    <td rowspan="2" class="row"><button class="red" onclick="calcular()">=</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="col"><button onclick="insert('0')">0</button></td>
-                    <td><button class="red" onclick="insert('.')">.</button></td>
-                </tr>
-            </table>
-        </div>
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button class="red" onclick="clean()">C</button></td>
+            <td><button onclick="back()">&lt</button></td>
+            <td><button onclick="insert('/')">/</button></td>
+            <td><button onclick="insert('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td><button onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td rowspan="2" class="row">
+              <button class="red" onclick="calcular()">=</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="col">
+              <button onclick="insert('0')">0</button>
+            </td>
+            <td><button class="red" onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <script src="js/script.js"></script>
-</body>
+    <footer>
+      <div class="informacoes-profissionais">
+        <p>Desenvolvido por <strong>Ernando Matias</strong></p>
+        <ul class="habilidades">
+          <li><img src="img/html.png" /></li>
+          <li><img src="img/css.png" /></li>
+          <li><img src="img/js.png" /></li>
+        </ul>
+      </div>
+      <div class="redes-sociais">
+        <ul>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=558897244032"
+              ><img src="img/whatsapp.svg" alt="img/whatsapp.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/a.m.ernando"
+              ><img src="img/instagram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/dErnandoV7"
+              ><img src="img/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@servodejc"
+              ><img src="img/tiktok.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
+    <script src="js/script.js"></script>
+  </body>
 </html>
